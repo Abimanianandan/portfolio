@@ -1,4 +1,5 @@
 import React from 'react'
+import CertificateImage from "../assets/My image/certificate.jpeg"
 
 const Certificate = () => {
   return (
@@ -6,7 +7,7 @@ const Certificate = () => {
        <h1 className="text-warning" style={{ textShadow: "2px 2px green" }}>
         Certification
       </h1>
-      <img src="../src/assets/My image/certificate.jpeg" alt="certificate img" style={{width:'80%',border:'3px solid black'}} />
+      <img src={CertificateImage}  alt="certificate img" style={{width:'80%',border:'3px solid black'}} />
          
     </div>
   )
