@@ -1,29 +1,66 @@
-
-import React from 'react';
+import React from "react";
+import LinkedImage from "../assets/My image/linkedin.png";
+import EmailImage from "../assets/My image/email.png";
+import GithubImage from "../assets/My image/github.png";
 
 const Home = () => {
   return (
     <div className="container mt-5">
-      <h1 className='text-info'>Hi 👋, I am <b style={{textShadow:'2px 2px green'}}>Abimani.</b></h1>
-      <div className='anime mt-5 fs-2'>Full Stack Developer</div>
+      <h1 className="text-info">
+        Hi 👋, I am <b style={{ textShadow: "2px 2px green" }}>Abimani.</b>
+      </h1>
+      <div className="anime mt-5 fs-2">Full Stack Developer</div>
       <ul>
-        <li className='mt-3 fs-5 fw-bolder'>Proficient full stack developer with expertise in both front-end and back-end technologies.</li>
-        <li className='mt-3 fs-5 fw-bolder'>Skilled in developing responsive web applications and delivering seamless user experiences.</li>
-        <li className='mt-3 fs-5 fw-bolder'>Strong problem-solving abilities and a keen eye for detail in software development.</li>
+        <li className="mt-3 fs-5 fw-bolder">
+          Proficient full stack developer with expertise in both front-end and
+          back-end technologies.
+        </li>
+        <li className="mt-3 fs-5 fw-bolder">
+          Skilled in developing responsive web applications and delivering
+          seamless user experiences.
+        </li>
+        <li className="mt-3 fs-5 fw-bolder">
+          Strong problem-solving abilities and a keen eye for detail in software
+          development.
+        </li>
       </ul>
       <div className="image-container d-flex mt-5" style={{ gap: "20px" }}>
-        <a href="https://www.linkedin.com/in/abimani18/" target='_blank' rel="noopener noreferrer">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEUMZMX///8AYcQAWcFDf8nL3PIAWrzQ3vMAYcI0eclZjtAucslAgsz6/v3x9/sgbclOhM8AX8QAYsAAX70AV70AWMLm7vgAXb4sdsw5fsoRbsVmltK6z+iUt+AMZcGDrN3c6fNvnddiltWqwuPA0+r0+vyOrt+lweR9pduuyueUst9Lh81pldd1mtYdbcunxOXO4u7Z4fGRyVlRAAAEKUlEQVR4nO3ce1faMBzG8SblEpSCiUUuQrkMhsCc+v7f3Ko4KjW/yLY0WXOez9mf4Ml3vSW1NYoAAAAAAAAAAAAAAAAAAAAAAAAAAADgYiriIsqU72FURcapGnXHk5aMue+xVCCT6n56x960Z2OpMt8jsozz+Xve0Xqc+h6SXbKzYOeSfex7UBap+J591lThHI3awPxw5KGcVFUj0RayaRrI6UaUj8GTpfA9NivknApkvTC2YdwjC9lc+h6dBWpFB7JFCIXx1FDIRr6HZ0Fq2EkZewjgXNMnLhVH34a+x/fPeMdYOK3/gchvTIFsXf/ZKR+bC+u/DcW1cS/d1f84jFobU+H3ANYXadNU2PU9PAvkd0Ngz/forMgMhU/1P5Xm4h0ZmHQCOAzz68WEPNdsg9iE+ZH4QATeBTApPYqf9PvoKIh99E2qOxQ3jVvf47JHDT5fMl5GAQW+3tNvnF/4N3shwrhJc8Ljw/Q0Q13MJ4GcRc8IORjP99vZfpWlQe2gH3EZx7Gs/4IJAADqQ3DJX/+FM38vqHyKlA5Hhx+Pj49X43468P34CheEiz9Z+pTMlrvFaQ6YbNrblRpKf6vNbHRNKX2yT/kwSVd5XluzGGs//Ew9NfIGS/RYs3X2yUGzp7dpnMYu+zPql1mbp46f+XxeSCkVxrpt8+bmWJgJOTPeYP7m5QkWi4Wye0d94t3m3sNmtFao5OyLvle7zPnRaKlQCb6+IDBfXvddJ1oq5BH5WE7JXd/xwWilUKnJpYGM9a7dPk5mpfCWP18cmO+okdOtaKVwYHxm5ZP1wOWNPBuFneUfBTK2dHkzyEbhwfirco3NxOF+aqPw8rPMbzuHV34bhX+h4e6q6KnQ4ZM6ngrZyNlG9FXo7hfMvgp7zt7o8FXIDq52U2+FznbTKgovmgAsalq4mB0mQqjJYfvler98o6sWhevuYPh2C5jz4WD1ReMPR4soi4W91dmtXy7MK469o7mpvcLn8nRaSWPi9PzH/++FCXvW3LuXpoXxi6MllK1tqHtGLBMd0zccLYNtFR60W8T0wkqv7yTQVuGTfpfLuvRXkms3sxo7hQlx/yy7NayOO3Uq3MXExY148PFY6OZyYafwihqsXNJfGteoMCGXQoYfzxo1KmxSO2kkJvTLcXUq3BreraFnp3UqNLwT3aJPpnUqPNBjTV+CKDScFVv0t+pUaLiytegXq1BoCQoLKNRDYfVQWEChHgqrh8ICCvVQWD0UFlCoh8LqobCAQj0UVg+FBRTqobB6KCygUA+F1UNhAYV6KKweCgso1ENh9VBYQKEeCquHwkKAhe1SIf2UoaFwSP+/dB29FtTvUsbnH+Q3VxTDmxOq+zffskqJiOtFpZda+OV/M6uQKepLof0NWAAAAAAAAAAAAAAAAAAAAAAAAAAAgAr8Aj5RWY0PDbn2AAAAAElFTkSuQmCC" alt="linkedin logo" className='border border-dark p-2 rounded-circle' style={{width:"70px"}}/>
+        <a
+          href="https://www.linkedin.com/in/abimani18/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={LinkedImage}
+            alt="linkedin logo"
+            className="border border-dark p-2 rounded-circle"
+          />
         </a>
-        <a href="mailto:info@abikbm06.com.np" target='_blank' rel="noopener noreferrer">
-          <img src="data:image/png;base64,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" alt="email logo" style={{width:"70px"}}className='border border-dark p-2 rounded-circle' />
+        <a
+          href="mailto:info@abikbm06.com.np"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={EmailImage}
+            alt="email logo"
+            className="border border-dark p-2 rounded-circle"
+          />
         </a>
-        <a href="https://github.com/Abimanianandan" target='_blank' rel="noopener noreferrer">
-          <img src="data:image/png;base64,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" alt="github logo" className='border border-dark p-2 rounded-circle' style={{width:"70px"}}/>
+        <a
+          href="https://github.com/Abimanianandan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={GithubImage}
+            alt="github logo"
+            className="border border-dark p-2 rounded-circle"
+          />
         </a>
       </div>
     </div>
   );
-}
+};
 
 export default Home;
