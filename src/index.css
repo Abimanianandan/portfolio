@@ -23,12 +23,14 @@
 .card:hover{
   transform:scale(1.03);
   border: 3px solid black;
+  background-color: pink;
   .btn{
-    background-color: yellow;
-    color: red;
+    background-color: green;
+    color: white;
     border: 2px solid black;
   }
 }
 .skill:hover{
   transform:scale(1.10);
+ 
 }
