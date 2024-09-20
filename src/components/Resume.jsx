@@ -1,5 +1,5 @@
 import React from "react";
-import ResumeImage from "../assets/My image/Abi new resume.pdf";
+// import ResumeImage from "../assets/My image/Abi new resume.pdf";
 import MyImage from "../assets/My image/my photo.jpeg";
 
 
@@ -16,7 +16,7 @@ const Resume = () => {
       <div className="card-body">
         <h5 className="card-title">Hi 👋 I am <b className="text-warning fs-4" style={{ textShadow: "2px 2px black" }}>Abimani.</b></h5>
         <p className="card-text fs-5">A passionate Full Stack Developer with a solid foundation in both front-end and back-end technologies.</p>
-        <a href={ResumeImage} target="blank" className="btn btn-primary">View Resume</a>
+        <a href="https://drive.google.com/file/d/1d_7OzxirgE6bDUXdVd4lVNiV0TFwFHF7/view?pli=1" target="blank" className="btn btn-primary">View Resume</a>
       </div>
     </div>
   </div>
